@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ramen 3</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">ERa<span>men</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="promo.html">Promo</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+        <section class="contact" id="contact">
+            <div class="title white">
+                <h2 class="titleText"><span>C</span>ontact</h2>
+                <p>If you have questions about products, suggestions or complaints to improve product quality and our performance, please share your experience in the form below.</p>
+            </div>
+            <div class="contactForm">
+                <form onsubmit="return validateForm()">
+                    <div class="inputBox">
+                        <label for="name">Nama:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <span class="error" id="nameError"></span>
+                        <!-- <input type="text" placeholder="Name"> -->
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <span class="error" id="emailError"></span>
+                        <!-- <input type="text" placeholder="Email"> -->
+                    </div>
+                    <div class="inputBox">
+                        <label for="phone">Nomor Telepon:</label><br>
+                        <input type="text" id="phone" name="phone"><br>
+                        <span class="error" id="phoneError"></span>
+                        <!-- <input type="text" placeholder="Phone Number"> -->
+                    </div>
+                    <div class="inputBox">
+                        <label for="message">Message:</label><br>
+                        <input type="text" id="message" name="message"><br>
+                        <span class="error" id="messageError"></span>
+                    </div>
+                    <label for="preferences">Ramen / Dry Ramen</label>
+                        <select class="inputBox" name="Preferences" id="preferences">
+                            <option value="Ramen">Ramen</option>
+                            <option value="Dry-Ramen">Dry Ramen</option>
+                        </select>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="preferences[]" value="option1">Receive Newsletter.</label><br>
+                    <span class="error" id="preferencesError"></span><br>
+                    <div class="inputBox">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="copyrightText">
+            <p>@ 2023 OuroKo. Inc. Ouro, ERamen, and any associated logos are trademark, service marks, and/or registered trademark of OuroKo, Inc</p>
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
